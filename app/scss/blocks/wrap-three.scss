@@ -1,0 +1,25 @@
+.wrap-three{
+	margin: 0 -20px;
+	display: flex;
+
+	text-align: center;
+
+	&__col{
+		width: 33.3333%;
+		padding: 0 20px;
+	}
+	&__title{
+		margin-top: 20px;
+		
+		font-size: 18px;
+		font-weight: 400;
+		color: $black;
+	}
+	&__text{
+		margin-top: 10px;
+
+		font-size: 16px;
+		font-weight: 400;
+		color: $gray;
+	}
+}

@@ -1,0 +1,29 @@
+.intro{
+	&__title{
+		margin-bottom: 30px;
+
+		font-size: 48px;
+		font-weight: 400;
+		color: $black;
+		line-height: 1.33;
+
+		text-align: center;
+	}
+	&__wrap-btn{
+		margin-bottom: 88px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__photo{
+		display: block;
+		margin: 0 auto 36px;
+		width: 100%;
+	}
+	&__subphoto{
+		display: block;
+		margin: 0 auto 148px;
+		width: 100%;
+		max-width: 806px;
+	}
+}

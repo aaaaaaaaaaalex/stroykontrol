@@ -1,0 +1,14 @@
+.partners{
+	&__header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__img{
+		display: block;
+	}
+	&__footer{
+		display: flex;
+		justify-content: center;
+	}
+}

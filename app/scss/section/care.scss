@@ -1,0 +1,46 @@
+.care{
+	&__inner{
+		display: flex;
+	}
+	&__right{
+		width: 54%;
+	}
+	&__title{
+		margin-bottom: 16px;
+		
+		font-size: 32px;
+		font-weight: 400;
+		color: $black;
+	}
+	&__text{
+		margin-bottom: 28px;
+
+		font-size: 20px;
+		color: $gray;
+	}
+	&__footer{
+		font-size: 20px;
+		color: $black;
+
+		
+	}
+	&__span{
+		position: relative;
+
+		&:before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			height: 50%;
+			width: 100%;
+			background-color: #FFD042;
+		}
+
+	}
+	&__left{
+		width: 46%;
+	}
+}

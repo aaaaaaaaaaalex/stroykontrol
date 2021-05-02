@@ -1,0 +1,19 @@
+.nav{
+	&__link{
+		margin-right: 22px;
+
+		font-size: 16px;
+		color: $gray;
+
+		&:hover{
+			border-bottom: 1px solid $gray;
+		}
+		&--blue{
+			color: $blue;
+
+			&:hover{
+				border-bottom: 1px solid $blue;
+			}
+		}
+	}
+}
