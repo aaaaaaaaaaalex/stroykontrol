@@ -1,0 +1,36 @@
+.block-nine{
+	margin-bottom: 25px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	&__col{
+		width: 33.3333%;
+	}
+	&__item{
+		min-height: 140px;
+		margin-bottom: 35px;
+		position: relative;
+		padding-left: 65px;
+
+		text-align: left;
+	}
+	&__img{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	&__title{
+		margin-bottom: 12px;
+
+		font-size: 18px;
+		font-weight: 400;
+		color: $black;
+	}
+	&__text{
+		width: 100%;
+		max-width: 270px;
+		font-size: 16px;
+		color: $gray;
+	}
+}

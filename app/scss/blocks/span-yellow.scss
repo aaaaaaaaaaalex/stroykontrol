@@ -1,0 +1,17 @@
+.span-yellow{
+	position: relative;
+
+	font-size: 20px;
+	color: $black;
+	&:before{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		height: 50%;
+		width: 100%;
+		background-color: #FFD042;
+	}
+}

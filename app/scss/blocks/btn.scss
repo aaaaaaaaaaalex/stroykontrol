@@ -8,6 +8,7 @@
 	border: 0;
 
 	&-order{
+		font-family: Arial, sans-serif;
 		font-size: 15px;
 		color: $white;
 
@@ -27,6 +28,17 @@
 			font-size: 17px;
 			padding: .81em 1.33em;
 		}
+		&--white{
+			color: $black;
+			border: 1px solid $gray-light;
+			background-color: $white;
+
+			&:hover{
+				color: $white;
+				background-color: $black;
+				box-shadow: 0 2px 15px rgba(0,0,0, .5);
+			}
+		}
 
 	}
 	&-more{
@@ -40,9 +52,22 @@
 		border: 1px solid #DADEDF;
 		
 		&:hover{
-			color: $black;
-			background-color: $white;
+			color: $white;
+			background-color: $black;
 			box-shadow: 0 2px 15px rgba(0,0,0, .5);
+			border: 1px solid $black;
+		}
+		&--black{
+			color: $white;
+			border: 1px solid $gray-light;
+			background-color: $black;
+
+			&:hover{
+				color: $black;
+				background-color: $white;
+				box-shadow: 0 2px 15px rgba(0,0,0, .5);
+			}
+
 		}
 	}
 	& + .btn{

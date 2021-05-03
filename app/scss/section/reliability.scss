@@ -1,0 +1,29 @@
+.reliability{
+	&__footer{
+		margin-top: 65px;
+		
+		padding: 40px;
+		display: flex;
+		justify-content: space-between;
+
+		background-color: #F6F8F9;
+	}
+	&__left{
+		display: flex;
+		align-items: center;
+	}
+	&__img{
+		display: block;
+		margin-right: 25px;
+	}
+	&__text{
+		font-size: 18px;
+
+		&--fw500{
+			font-weight: 500;
+		}
+		&--fw400{
+			font-weight: 400;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.job{
+	&__inner{
+		display: flex;
+	}
+	&__left,
+	&__right{
+		width: 50%;
+	}
+	&__title{
+		margin-bottom: 20px;
+		
+		font-size: 32px;
+		font-weight: 400;
+		color: $black;
+	}
+	&__subtitle{
+		margin-bottom: 60px;
+
+		font-size: 20px;
+		font-weight: 400;
+		color: $gray;
+	}
+	&__item{
+		margin-bottom: 30px;
+		padding-left: 72px;
+		position: relative;
+	}
+	&__number{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 0;
+		left: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border: 1px solid $gray-light;
+		color: $gray;
+	}
+	&__mini-title{
+		margin-bottom: 10px;
+		
+		font-size: 17px;
+		font-weight: 400;
+		color: $black;
+	}
+	&__text{
+		font-size: 16px;
+		color: $gray;
+	}
+}

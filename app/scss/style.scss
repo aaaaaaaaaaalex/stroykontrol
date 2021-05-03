@@ -18,7 +18,7 @@
 body{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    color: $black;
+    color: $gray;
     overflow-x: hidden;
 
     &.no-scroll{
@@ -32,9 +32,14 @@ body{
 // Section
 @import "section/header";
 @import "section/intro";
-@import "section/chaos";
 @import "section/care";
 @import "section/partners";
+@import "section/what";
+@import "section/ease";
+@import "section/reliability";
+@import "section/black";
+@import "section/job";
+@import "section/choice";
 @import "section/footer";
 
 
@@ -45,6 +50,9 @@ body{
 @import "blocks/nav";
 @import "blocks/btn";
 @import "blocks/wrap-three";
+@import "blocks/span-yellow";
+@import "blocks/block-nine";
+@import "blocks/reviews";
 @import "blocks/section";
 
 

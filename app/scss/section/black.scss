@@ -1,0 +1,56 @@
+.black{
+	&__wrap{
+		margin: 0 auto;
+		padding: 145px 0 120px;
+		max-width: 1440px;
+		background: $black url("../img/black/black-bg.png") right top 145px no-repeat;
+	}
+	&__header{
+		margin-bottom: 130px;
+		max-width: 590px;
+	}
+	&__title{
+		margin-bottom: 50px;
+		
+		font-size: 32px;
+		font-weight: 400;
+		color: $white;
+	}
+	&__advantages{
+		margin-bottom: 50px;
+	}
+	&__item{
+		margin-bottom: 25px;
+		padding-left: 40px;
+
+		
+	}
+	&__subtitle{
+		margin-bottom: 10px;
+
+		font-size: 18px;
+		font-weight: 400;
+		color: $white;
+
+		position: relative;
+
+		&:before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: -40px;
+			z-index: 1;
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			background-color: $white;
+
+			transform: translateY(-50%);
+		}
+	}
+	&__text{
+		font-size: 16px;
+		color: rgba($white, .75);
+	}
+	
+}

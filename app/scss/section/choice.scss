@@ -1,0 +1,31 @@
+.choice{
+	&__wrap{
+		display: flex;
+	}
+	&__left,
+	&__right{
+		width: 50%;
+	}
+	&__item{
+		margin-bottom: 30px;
+		position: relative;
+		padding-left: 64px;
+	}
+	&__img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	&__subtitle{
+		margin-bottom: 10px;
+		
+		font-size: 18px;
+		font-weight: 400;
+		color: $black;
+	}
+	&__text{
+		font-size: 16px;
+		color: $gray;
+	}
+}
