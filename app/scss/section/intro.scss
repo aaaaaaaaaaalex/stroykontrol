@@ -8,22 +8,56 @@
 		line-height: 1.33;
 
 		text-align: center;
+
+		@media ($lg) {
+			font-size: 43px;
+		}
+		@media ($md) {
+			font-size: 32px;
+		}
+		@media ($sm) {
+			font-size: 26px;
+		}
+		@media ($usm) {
+			font-size: 17px;
+		}
 	}
 	&__wrap-btn{
 		margin-bottom: 88px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@media ($md) {
+			margin-bottom: 50px;
+		}
+		@media ($usm) {
+			margin-bottom: 25px;
+		}
 	}
 	&__photo{
 		display: block;
 		margin: 0 auto 36px;
 		width: 100%;
+
+		@media ($md) {
+			margin-bottom: 25px;
+		}
+		@media ($usm) {
+			margin-bottom: 15px;
+		}
 	}
 	&__subphoto{
 		display: block;
 		margin: 0 auto 148px;
 		width: 100%;
 		max-width: 806px;
+
+		@media ($md) {
+			margin-bottom: 100px;
+		}
+		@media ($usm) {
+			margin-bottom: 50px;
+		}
 	}
 }

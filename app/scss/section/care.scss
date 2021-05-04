@@ -4,6 +4,10 @@
 	}
 	&__right{
 		width: 54%;
+
+		@media ($lg) {
+			width: 100%;
+		}
 	}
 	&__title{
 		margin-bottom: 16px;
@@ -11,14 +15,46 @@
 		font-size: 32px;
 		font-weight: 400;
 		color: $black;
+
+		@media ($lg) {
+			text-align: center;
+		}
+		@media ($md) {
+			font-size: 25px;
+		}
+		@media ($usm) {
+			font-size: 17px;
+			margin-bottom: 10px;
+		}
 	}
 	&__text{
 		margin-bottom: 28px;
 
 		font-size: 20px;
 		color: $gray;
+
+		@media ($lg) {
+			text-align: center;
+		}
+		@media ($md) {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		@media ($usm) {
+			font-size: 14px;
+			line-height: 1.2;
+		}
 	}
 	&__left{
 		width: 46%;
+
+		@media ($lg) {
+			display: none;
+		}
+	}
+	&__footer{
+		@media ($lg) {
+			text-align: center;
+		}
 	}
 }

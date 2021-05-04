@@ -1,6 +1,15 @@
 .section{
 	padding: 75px 0;
 
+	@media ($md) {
+		padding: 50px 0;
+	}
+	@media ($sm) {
+		padding: 35px 0;
+	}
+	@media ($usm) {
+		padding: 25px 0;
+	}
 	&__title{
 		margin-bottom: 16px;
 		
@@ -8,6 +17,14 @@
 		font-weight: 400;
 		color: $black;
 		text-align: center;
+
+		@media ($md) {
+			font-size: 25px;
+		}
+		@media ($usm) {
+			font-size: 17px;
+			margin-bottom: 10px;
+		}
 	}
 	&__text{
 		margin-bottom: 40px;
@@ -16,5 +33,15 @@
 		color: $gray;
 		text-align: center;
 
+		line-height: 1.6;
+
+		@media ($md) {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		@media ($usm) {
+			font-size: 14px;
+			line-height: 1.2;
+		}
 	}
 }

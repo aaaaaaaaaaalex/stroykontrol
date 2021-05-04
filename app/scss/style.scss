@@ -9,10 +9,18 @@
 }
 
 
+// Vendor
+@import "vendor/slick";
+
+
+
+
+
 @import "fonts";
 @import "reset";
 @import "vars";
 @import "global";
+@import "modals";
 
 
 body{
@@ -20,6 +28,7 @@ body{
     font-size: 16px;
     color: $gray;
     overflow-x: hidden;
+    line-height: 1.5;
 
     &.no-scroll{
         overflow: hidden;
@@ -32,6 +41,7 @@ body{
 // Section
 @import "section/header";
 @import "section/intro";
+@import "section/chaos";
 @import "section/care";
 @import "section/partners";
 @import "section/what";
@@ -40,6 +50,8 @@ body{
 @import "section/black";
 @import "section/job";
 @import "section/choice";
+@import "section/startup";
+@import "section/ready";
 @import "section/footer";
 
 
@@ -54,6 +66,8 @@ body{
 @import "blocks/block-nine";
 @import "blocks/reviews";
 @import "blocks/section";
+@import "blocks/social";
+@import "blocks/burger";
 
 
 

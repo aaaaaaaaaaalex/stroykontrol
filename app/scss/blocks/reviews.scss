@@ -1,0 +1,126 @@
+.reviews{
+	padding: 45px 40px 56px;
+	background-color: #F6F8F9;
+
+	@media ($md) {
+		font-size: 20px;
+	}
+	@media ($sm) {
+		font-size: 18px;
+	}
+	@media ($usm) {
+		font-size: 16px;
+	}
+	&__item{
+		position: relative;
+		padding-top: 20px;
+		padding-left: 45px;
+	}
+	&__comma{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__text{
+		margin-bottom: 30px;
+
+		font-size: 26px;
+		color: $black;
+		line-height: 1.6;
+
+		position: relative;
+		z-index: 1;
+
+		@media ($xl) {
+			font-size: 24px;
+		}
+		@media ($lg) {
+			font-size: 22px;
+		}
+		@media ($md) {
+			font-size: 20px;
+		}
+		@media ($sm) {
+			font-size: 18px;
+		}
+		@media ($usm) {
+			font-size: 16px;
+		}
+	}
+	&__footer{
+		display: flex;
+		align-items: center;
+
+		font-size: 16px;
+	}
+	&__ava{
+		display: block;
+		margin-right: 8px;
+	}
+	&__name{
+		color: $black;
+	}
+	&__prof{
+		color: $gray;
+	}
+}
+
+
+// Slider
+.slick-dots{
+	padding: 0;
+	
+	display: flex;
+	margin: 28px 0 0 41px;
+
+	@media ($xl) {
+		margin-top: 30px;
+	}
+	@media ($lg) {
+		margin-top: 20px;
+	}
+	@media ($sm) {
+		margin-top: 10px;
+	}
+	@media ($usm) {
+		margin-top: 5px;
+	}
+	& li{
+		display: flex;
+		align-items: center;
+		margin: 0 4px;
+	}
+	& button{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0;
+
+		width: 8px;
+		height: 8px;
+
+		font-family: inherit;
+		background-color: rgba($color: $blue, $alpha: .2);
+		border: 0;
+		border-radius: 50%;
+
+		font-size: 0;
+		color: transparent;
+
+		outline: 0;
+
+		&:focus{
+			border: 1px solid $blue;
+			border-radius: 50%;
+		}
+	}
+	& .slick-active button{
+		width: 8px;
+		height: 8px;
+		background-color: $blue;
+
+		&:focus{
+			border: 1px solid $blue;
+			border-radius: 50%;
+		}
+	}
+}

@@ -1,12 +1,33 @@
 .wrap-three{
 	margin: 0 -20px;
 	display: flex;
+	flex-wrap: wrap;
 
 	text-align: center;
 
 	&__col{
 		width: 33.3333%;
 		padding: 0 20px;
+
+		@media ($lg) {
+			padding: 0 15px;
+		}
+		@media ($md) {
+			padding: 0 10px;
+			width: 100%;
+		}
+		@media ($usm) {
+			padding: 0 15px;
+		}
+	}
+	&__item{
+		width: 100%;
+		max-width: 330px;
+		margin: 0 auto;
+
+		@media ($md) {
+			margin-bottom: 30px;
+		}
 	}
 	&__title{
 		margin-top: 20px;
@@ -14,10 +35,19 @@
 		font-size: 18px;
 		font-weight: 400;
 		color: $black;
+		
 
 		&--white{
 			color: $white;
 
+		}
+		@media ($md) {
+			font-size: 16px;
+			margin-top: 15px;
+		}
+		@media ($usm) {
+			font-size: 14px;
+			margin-top: 10px;
 		}
 	}
 	&__text{
@@ -29,6 +59,15 @@
 
 		&--white{
 			color: rgba($white, .75);
+		}
+		@media ($md) {
+			font-size: 14px;
+			
+		}
+		@media ($usm) {
+			font-size: 12px;
+			margin-top: 5px;
+			line-height: 1.2;
 		}
 	}
 }

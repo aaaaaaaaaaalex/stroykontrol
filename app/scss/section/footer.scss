@@ -1,7 +1,71 @@
 .footer{
-	background-color: #5A5A5A;
+	padding-top: 75px;
+	&__header{
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 50px;
 
-	&__inner{
-		
+		border-bottom: 1px solid $gray-light;
+	}
+	&__content{
+		margin-top: 25px;
+	}
+	&__address{
+		margin-bottom: 10px;
+
+		font-size: 15px;
+		color: $gray;
+	}
+	&__email-link{
+		font-size: 15px;
+		color: $gray;
+	}
+	&__tel{
+		margin-bottom: 20px;
+	}
+	&__tel-link{
+		font-size: 15px;
+		color: $gray;
+	}
+	&__nav{
+		display: flex;
+		flex-direction: column;
+	}
+	&__title{
+		margin-bottom: 25px;
+
+		font-size: 16px;
+		font-weight: 400;
+		color: $black;
+	}
+	&__link{
+		margin-bottom: 8px;
+
+		font-size: 15px;
+		color: $gray;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:hover{
+			border-bottom: 1px solid $gray;
+		}
+	}
+	&__underground{
+		padding: 33px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__copyright{
+		font-size: 16px;
+		color: $gray;
+	}
+	&__link-privacy-polyci{
+		font-size: 16px;
+		color: $gray;
+
+		&:hover{
+			border-bottom: 1px solid $gray;
+		}
 	}
 }

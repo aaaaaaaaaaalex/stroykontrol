@@ -5,24 +5,36 @@
 			<div class="logo">
 				<a class="logo__link" href="#" title="На главную">
 					<div class="logo__wrap-img">
-						<img class="logo-img" src="img/logo/logo.svg" alt="логотип">
+						<img class="logo__img" src="img/logo/logo.svg" alt="логотип">
 					</div>
-					<div class="logo__text">Стройконтроль</div>
+					<div class="logo__text logo__text--media-sm">Стройконтроль</div>
 				</a>
 			</div>
+
 			<div class="header__right">
-				<nav class="nav">
-					<a class="nav__link nav__link--blue" href="#" title="Открыть главную страницу">Главная</a>
-					<a class="nav__link" href="#" title="Посмотрите информацию о нас">О нас</a>
-					<a class="nav__link" href="#" title="Посмотрите нашу продукцию">Продукция</a>
-					<a class="nav__link" href="#" title="Посмотрите процесс">Процесс</a>
-					<a class="nav__link" href="#" title="Посмотрите преимущества надежного строительства">Надёжность</a>
-					<a class="nav__link" href="#" title="Посмотрите наших клиентов">Клиенты</a>
-					<a class="nav__link" href="#" title="Посмотрите информацию для связи с нами">Связаться с нами</a>
+				<nav class="nav" data-menu>
+					<a class="nav__link nav__link--blue" href="#" title="Открыть главную страницу" data-modal="#modal">Главная</a>
+					<a class="nav__link" href="#" title="Посмотрите информацию о нас" data-modal="#modal">О нас</a>
+					<a class="nav__link" href="#" title="Посмотрите нашу продукцию" data-modal="#modal">Продукция</a>
+					<a class="nav__link" href="#" title="Посмотрите процесс" data-modal="#modal">Процесс</a>
+					<a class="nav__link" href="#" title="Посмотрите преимущества надежного строительства" data-modal="#modal">Надёжность</a>
+					<a class="nav__link" href="#" title="Посмотрите наших клиентов" data-modal="#modal">Клиенты</a>
+					<a class="nav__link" href="#" title="Посмотрите информацию для связи с нами" data-modal="#modal">Связаться с нами</a>
 				</nav>
-				<button class="btn btn-order" title="Нажмите, чтобы заказать демонстрационный вариант">Заказать демо</button>
+				<div class="btn-order-wrap" data-menu>
+					<button class="btn btn-order" title="Нажмите, чтобы заказать демонстрационный вариант" data-modal="#modal">Заказать демо</button>
+				</div>
 			</div>
+
+			<button class="btn burger" id="burger" type="button">
+                <span class="burger__item">Menu</span>
+            </button>
 
 		</div><!-- header__inner -->
 	</div><!-- container -->
 </header>
+
+
+
+<!-- Sprite -->
+@@include('sprite.html')

@@ -14,4 +14,10 @@
 		width: 100%;
 		background-color: #FFD042;
 	}
+	@media ($md) {
+		font-size: 18px;
+	}
+	@media ($usm) {
+		font-size: 14px;
+	}
 }

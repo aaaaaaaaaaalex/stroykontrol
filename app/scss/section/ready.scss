@@ -1,0 +1,17 @@
+.ready{
+	&__inner{
+		padding: 120px 40px;
+		background: #FFD042 url("../img/ready/ready-bg.png") center/cover no-repeat;
+	}
+	&__title{
+		margin-bottom: 55px;
+		font-size: 48px;
+		font-weight: 400;
+		color: $black;
+		line-height: 1.33;
+		text-align: center;
+	}
+	&__wrap-btn{
+		text-align: center;
+	}
+}

@@ -1,12 +1,19 @@
 .header{
 	width: 100%;
 	min-height: 100px;
+
 	&__inner{
 		padding: 26px;
 
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		position: relative;
+
+		@media ($usm) {
+			padding: 26px 0;
+		}
 	}
 	&__right{
 		display: flex;

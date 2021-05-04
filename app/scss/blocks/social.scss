@@ -1,0 +1,12 @@
+.social{
+
+	&__icon{
+		width: 24px;
+		height: 24px;
+		fill: rgba($color: #73787C, $alpha: .5);
+
+		&:hover{
+			fill: rgba($color: $blue, $alpha: .5);
+		}
+	}
+}

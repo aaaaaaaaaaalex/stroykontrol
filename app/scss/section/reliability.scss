@@ -1,16 +1,70 @@
 .reliability{
+	&__parents-wrap{
+		text-align: center;
+	}
+	&__wrap{
+		margin: 0 auto;
+		display: inline-block;
+		position: relative;
+		
+	}
+	&__list{
+		position: absolute;
+		top: -20px;
+		left: 188px;
+		z-index: 1;
+
+		@media ($md) {
+			top: -13px;
+			left: 146px;
+			
+			width: 30px;
+		}
+		@media ($usm) {
+			top: -11px;
+			left: 100px;
+			
+			width: 22px;
+		}
+	}
 	&__footer{
 		margin-top: 65px;
 		
 		padding: 40px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 
 		background-color: #F6F8F9;
+
+		@media ($md) {
+			padding: 30px;
+		}
+		@media ($sm) {
+			padding: 20px;
+		}
+		@media ($usm) {
+			padding: 10px;
+		}
+	}
+	&__left,
+	&__right{
+		@media ($md) {
+			width: 100%;
+		}
 	}
 	&__left{
 		display: flex;
 		align-items: center;
+
+		@media ($md) {
+			margin-bottom: 10px;
+		}
+	}
+	&__right{
+		@media ($md) {
+			text-align: center;
+		}
 	}
 	&__img{
 		display: block;
@@ -24,6 +78,13 @@
 		}
 		&--fw400{
 			font-weight: 400;
+		}
+
+		@media ($md) {
+			font-size: 16px;
+		}
+		@media ($usm) {
+			font-size: 14px;
 		}
 	}
 }
