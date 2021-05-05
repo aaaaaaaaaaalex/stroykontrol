@@ -49,7 +49,7 @@
 	}
 	&__left,
 	&__right{
-		@media ($md) {
+		@media ($xl) {
 			width: 100%;
 		}
 	}
@@ -57,12 +57,13 @@
 		display: flex;
 		align-items: center;
 
-		@media ($md) {
+		@media ($xl) {
+			justify-content: center;
 			margin-bottom: 10px;
 		}
 	}
 	&__right{
-		@media ($md) {
+		@media ($xl) {
 			text-align: center;
 		}
 	}

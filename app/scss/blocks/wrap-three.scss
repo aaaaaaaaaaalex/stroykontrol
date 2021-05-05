@@ -5,6 +5,9 @@
 
 	text-align: center;
 
+	@media ($usm) {
+		margin: 0;
+	}
 	&__col{
 		width: 33.3333%;
 		padding: 0 20px;
@@ -13,11 +16,8 @@
 			padding: 0 15px;
 		}
 		@media ($md) {
-			padding: 0 10px;
+			padding: 0;
 			width: 100%;
-		}
-		@media ($usm) {
-			padding: 0 15px;
 		}
 	}
 	&__item{
@@ -27,6 +27,9 @@
 
 		@media ($md) {
 			margin-bottom: 30px;
+		}
+		@media ($usm) {
+			max-width: 300px;
 		}
 	}
 	&__title{

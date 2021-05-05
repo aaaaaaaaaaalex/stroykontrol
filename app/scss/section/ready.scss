@@ -2,6 +2,19 @@
 	&__inner{
 		padding: 120px 40px;
 		background: #FFD042 url("../img/ready/ready-bg.png") center/cover no-repeat;
+
+		@media ($lg) {
+			padding: 100px 35px;
+		}
+		@media ($md) {
+			padding: 80px 30px;
+		}
+		@media ($sm) {
+			padding: 70px 25px;
+		}
+		@media ($usm) {
+			padding: 60px 20px;
+		}
 	}
 	&__title{
 		margin-bottom: 55px;
@@ -10,8 +23,40 @@
 		color: $black;
 		line-height: 1.33;
 		text-align: center;
+
+		@media ($lg) {
+			font-size: 43px;
+			margin-bottom: 35px;
+		}
+		@media ($md) {
+			font-size: 32px;
+			margin-bottom: 30px;
+		}
+		@media ($sm) {
+			font-size: 26px;
+			margin-bottom: 25px;
+		}
+		@media ($usm) {
+			font-size: 17px;
+			margin-bottom: 20px;
+		}
+	}
+	&__parents-wrap-btn{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+
+		@media ($usm) {
+			flex-direction: column;
+		}
 	}
 	&__wrap-btn{
-		text-align: center;
+		@media ($usm) {
+			margin-bottom: 10px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
 	}
 }

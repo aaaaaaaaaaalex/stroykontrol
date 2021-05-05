@@ -2,24 +2,55 @@
 	padding: 45px 40px 56px;
 	background-color: #F6F8F9;
 
+	@media ($xl) {
+		padding: 40px;
+	}
+	@media ($lg) {
+		padding: 30px;
+	}
 	@media ($md) {
-		font-size: 20px;
+		padding: 20px 20px 30px;
 	}
 	@media ($sm) {
-		font-size: 18px;
+		padding: 15px 15px 30px;
 	}
 	@media ($usm) {
-		font-size: 16px;
+		padding: 10px 10px 30px;
 	}
 	&__item{
 		position: relative;
 		padding-top: 20px;
 		padding-left: 45px;
+
+		
 	}
 	&__comma{
 		position: absolute;
-		top: 0;
+		top: -4px;
 		left: 0;
+
+		@media ($xl) {
+			width: 90px;
+			top: 2px;
+		}
+		@media ($lg) {
+			width: 80px;
+			left: 8px;
+		}
+		@media ($md) {
+			width: 70px;
+			top: 5px;
+		}
+		@media ($sm) {
+			width: 60px;
+			top: 12px;
+			left: 15px;
+		}
+		@media ($usm) {
+			width: 50px;
+			top: 14px;
+			left: 20px;
+		}
 	}
 	&__text{
 		margin-bottom: 30px;
@@ -52,6 +83,13 @@
 		align-items: center;
 
 		font-size: 16px;
+
+		@media ($md) {
+			font-size: 14px;
+		}
+		@media ($usm) {
+			font-size: 12px;
+		}
 	}
 	&__ava{
 		display: block;

@@ -3094,5 +3094,17 @@ jQuery(function() {
 			MenuBlock.removeClass("show");
 		});
 	});
+
+
+
+	// Close Menu
+	jQuery("[data-close-menu]").on("click", function(event){
+		event.preventDefault();
+
+		jQuery("#burger").removeClass("active");
+		jQuery("#nav").removeClass("show");
+		jQuery("#btn-order-wrap").removeClass("show");
+
+	});
 	
 });

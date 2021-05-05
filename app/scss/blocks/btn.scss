@@ -112,6 +112,8 @@
 		margin-left: 16px;
 	}
 	&-connection{
+		margin-left: 16px;
+
 		font-size: 18px;
 		color: $black;
 
@@ -126,6 +128,16 @@
 			background-color: $black;
 			box-shadow: 0 2px 15px rgba(0,0,0, .5);
 			border: 1px solid $black;
+		}
+		@media ($md) {
+			font-size: 15px;
+			height: 45px;
+		}
+		@media ($usm) {
+			margin-left: 0;
+
+			font-size: 12px;
+			height: 35px;
 		}
 	}
 }
